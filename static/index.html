@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vendor/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">
+  </head>
+
+  <body class="clearfix">
+    <h1>Guess the Dress</h1>
+    <div class="container animated bounceInLeft">
+      <div id="speech-bubble"><b>Hi, I'm Ava Tarr!</b> <br> Can you help me choose the appropriate
+      <b>head piece</b>, <b>outfit</b> and <b>footwear</b> for each of the 4 places I'm visiting? <br>
+      <b>Click</b> to choose an item and I'll give you a hint on each with my smile. (Each round is worth 90 points)</div>
+      <div class="row">
+        <div class="head"> <img src="" id="hat" width="150px">
+          <div class="hair"></div>
+          <div class="right-eye animated infinite fadeIn"></div>
+          <div class="left-eye animated infinite fadeIn"></div>
+          <img id="mouth" src="images/standard.png" width="75px">
+        </div>
+        </div>
+
+      <div class="row">
+      <div class="top"></div>
+        <div class="torso"><img src="" id="middle" width="150px">
+          <div class="arm" id="left-arm"></div>
+          <div class="arm" id="right-arm"></div>
+        </div>
+          <div class="bottom"></div>
+      </div>
+
+        <div class="legs">
+            <div id="left-leg"></div>
+            <div id="right-leg"></div>
+        </div>
+
+      </div>
+
+        <div id="win"><div id="points"></div></div>
+      <aside id="closet">
+        <p>Ava's Closet</p>
+					<div class = "gallery">
+						<img src="images/cowboy-hat.png" width="80px" class="h">
+						<img src="images/bow.png" width="50px" class="h">
+						<img src="images/beach-hat.png" width="100px" class="h">
+						<img src="images/space-helmet.png" width="80px" class="h">
+						</div>
+					<div class = "gallery">
+						<img src="images/cowboy.png" width="100px" height="110px" class="o">
+						<img src="images/dress.png" width="110px" height="120px"class="o">
+						<img src="images/swimsuit.png" width="80px" height="120px" class="o">
+					  <img src="images/spacesuit.png" width="90px" height="100px" class="o">
+
+					<div class = "gallery">
+						<div class="small-legs">
+                <div class="left-leg s" id="ball-boots-l"></div>
+                <div class="right-leg s" id="ball-boots-r">Shiny Boots</div>
+            </div>
+            <div class="small-legs">
+                <div class="left-leg s" id="cow-boots-l"></div>
+                <div class="right-leg s" id="cow-boots-r">Hide Leather boots</div>
+            </div>
+            <div class="small-legs">
+                <div class="left-leg s" id="space-boots-l"></div>
+                <div class="right-leg s"id="space-boots-r">Silicon Steel Boots</div>
+            </div>
+            <div class="small-legs">
+                <div class="left-leg s" id="beach-boots-l"></div>
+                <div class="right-leg s"id="beach-boots-r">No Shoes</div>
+            </div>
+					</div>
+          <audio id="cheer" src="sounds/applause3.mp3" preload="auto"></audio>
+          <audio id="laugh" src="sounds/laughter.mp3" preload="auto"></audio>
+          <audio id="click" src="sounds/Click.mp3" preload="auto"></audio>
+          <audio id="tada" src="sounds/Tada.mp3" preload="auto"></audio>
+          <audio id="beach" src="sounds/beach.mp4" preload="auto"></audio>
+          <audio id="west" src="sounds/west.mp4" preload="auto"></audio>
+          <audio id="space" src="sounds/space.mp4" preload="auto"></audio>
+          <audio id="party" src="sounds/party.mp4" preload="auto"></audio>
+          <audio id="end" src="sounds/end.mp4" preload="auto"></audio>
+		</aside>
+    <div id="info">
+      <p id="message">Choose the right clothes for <div id="place"></div></p>
+      <button id="submit">Submit Choices!</button>
+    </div>
+  </body>
+</html>
